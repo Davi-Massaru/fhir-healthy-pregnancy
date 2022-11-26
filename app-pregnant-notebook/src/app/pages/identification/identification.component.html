@@ -1,0 +1,7 @@
+<form nz-form [nzLayout]="'vertical'" aria-readonly="true" >
+
+    <label nz-radio-button>fhir json data</label>
+    <textarea rows="12" nz-input [value]="stringJson" disabled="true"> </textarea>
+    <a nz-button nzType="link" (click)="copyPatient()"><span nz-icon nzType="copy" nzTheme="outline"></span> Copy</a>
+
+</form>
