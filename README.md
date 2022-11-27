@@ -1,4 +1,46 @@
- [![Gitter](https://img.shields.io/badge/Available%20on-Intersystems%20Open%20Exchange-00b2a9.svg)](https://openexchange.intersystems.com/package/iris-fhir-template)
+**What's new in the version**
+
+Initial Release
+
+***
+
+**Introduction**
+The Brazilian mother, on the recommendation of the Ministry of Health, has a document to record the most important information about the pregnancy: the pregnant notebook.
+
+Just as it represents a great ally of the pregnant woman, it also appears as something essential for the professionals who accompany her. Therefore, even if she is attended by different doctors or nurses, from the moment she has everything registered, the assistance provided improves.
+
+And this goes far beyond prenatal care! As much as the great performance is throughout the weeks of pregnancy, with notes at each appointment, the card will make all the difference at the time of delivery. It is he who will guide all the conduct not only for the birth, but also for the baby.
+
+***
+
+**Summary**
+This system is a set of components: the Pregnant Notebook GUI web part, a cloud-based FHIR server, where the results of diagnostic medicine exams performed by the patient are made available.
+
+The web-based GUI interface to obtain the information of exam results performed by the patient.
+
+
+
+![Image](/mp/img/uploads/ohkfa2vf5ixfvdwybt5orpdxokcrqj6xmhiny.png)
+
+***
+
+**Features**
+
+For each and every health service that the pregnant woman attends, it is necessary to carry these records with her, as they contain important data, such as:
+• ultrasound results;
+• serology tests;
+• complications of pregnancy;
+• blood typing;
+• gestational age.
+
+
+***
+**Application Layout**
+
+***
+**Deployment**
+
+[![Gitter](https://img.shields.io/badge/Available%20on-Intersystems%20Open%20Exchange-00b2a9.svg)](https://openexchange.intersystems.com/package/iris-fhir-template)
  [![Quality Gate Status](https://community.objectscriptquality.com/api/project_badges/measure?project=intersystems_iris_community%2Firis-fhir-template&metric=alert_status)](https://community.objectscriptquality.com/dashboard?id=intersystems_iris_community%2Firis-fhir-template)
  [![Reliability Rating](https://community.objectscriptquality.com/api/project_badges/measure?project=intersystems_iris_community%2Firis-fhir-template&metric=reliability_rating)](https://community.objectscriptquality.com/dashboard?id=intersystems_iris_community%2Firis-fhir-template)
 # iris-fhirserver-template
@@ -74,7 +116,6 @@ While open the page you will see search result for female anemic patients and gr
 [Developer Community FHIR section](https://community.intersystems.com/tags/fhir)
 
 
-
 ## How to start development
 This repository is ready to code in VSCode with ObjectScript plugin.
 Install [VSCode](https://code.visualstudio.com/), [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) and [ObjectScript](https://marketplace.visualstudio.com/items?itemName=daimor.vscode-objectscript) plugin and open the folder in VSCode.
@@ -87,7 +128,6 @@ Feel free to delete PackageSample folder and place your ObjectScript classes in 
 
 The script in Installer.cls will import everything you place under /src into IRIS.
 
-
 ## What's inside the repository
 
 ### Dockerfile
@@ -96,14 +136,12 @@ The simplest dockerfile which starts IRIS and imports Installer.cls and then run
 Use the related docker-compose.yml to easily setup additional parametes like port number and where you map keys and host folders.
 Use .env/ file to adjust the dockerfile being used in docker-compose.
 
-
 ### .vscode/settings.json
 
 Settings file to let you immedietly code in VSCode with [VSCode ObjectScript plugin](https://marketplace.visualstudio.com/items?itemName=daimor.vscode-objectscript))
 
 ### .vscode/launch.json
 Config file if you want to debug with VSCode ObjectScript
-
 
 ## Troubleshooting
 **ERROR #5001: Error -28 Creating Directory /usr/irissys/mgr/FHIRSERVER/**
@@ -122,3 +160,17 @@ docker-compose up -d
 ```
 
 This and other helpful commands you can find in [dev.md](https://github.com/intersystems-community/iris-fhir-template/blob/cd7e0111ff94dcac82377a2aa7df0ce5e0571b5a/dev.md)
+
+***
+**Recommendation**
+Read related documentations: fhir
+
+***
+**Thanks**
+
+**Davi Muta**
+* [Linkedin: Davi Massaru Teixeira Muta](https://www.linkedin.com/in/davi-massaru-teixeira-muta-003284191/)
+* [Davi Massaru Teixeira Muta](https://openexchange.intersystems.com/user/davi%20massaru%20teixeira%20muta/ygbBNKanLnVDa9ffzk64UznaE)
+
+**Edmara Francisco**
+[LinkedIn: Edmara Francisco](https://www.linkedin.com/in/edmara-francisco-ab825734/)
