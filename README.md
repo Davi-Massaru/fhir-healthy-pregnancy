@@ -14,9 +14,9 @@ And this goes far beyond prenatal care! As much as the great performance is thro
 
 This system is a set of components: the Pregnant Notebook GUI web part, a cloud-based FHIR server, where the results of diagnostic medicine exams performed by the patient are made available.
 
-The web-based GUI interface to obtain the information of exam results performed by the patient.
+The web-based GUI interface to obtain the information of the results of the exams performed by the patient is developed with the Angular framework and the ng-zorro Ant Design
 
-
+https://ng.ant.design/docs/introduce/en
 
 ![Image](https://raw.githubusercontent.com/Davi-Massaru/fhir-healthy-pregnancy/master/img/DiagramApp.jpeg)
 
@@ -28,6 +28,25 @@ For each and every health service that the pregnant woman attends, it is necessa
  * complications of pregnancy;
  * blood typing;
  * gestational age.
+ 
+**Blood typing**
+Blood incompatibility, especially of the Rh factor, can result in hematological complications. The best known of them is called erythroblastosis fetalis, which appears as an attack on the baby's blood cells.
+
+**Serologies**
+The investigation can be performed more than once during pregnancy! If the pregnant woman is not immune to toxoplasmosis, for example, it is necessary to redo the research periodically. The same happens with the other negative serologies, such as HIV, syphilis and hepatitis B.
+
+**Urine tests**
+Another special attention should be given to urinary issues. Pregnancy alone increases the risk of infections that urinate. Therefore, even if you do not have any symptoms, it is necessary to periodically assess whether there is any current infection.
+If the pregnant woman has more than one infection during pregnancy, it is valid to initiate measures to prevent new episodes.
+
+**Comorbidities**
+There are the so-called hypertensive syndromes of pregnancy, which must be detected in a timely manner for treatment. Another aspect that should always be researched is gestational diabetes, especially between 24 and 28 weeks.
+
+**Vaccines**
+Even if you present the complete vaccination card, you need to take a few more essential bites:
+ * bacterial triplet;
+ * adult pair (diphtheria and tetanus);
+ * influenza (flu).
 
 
 ## Application Layout 
