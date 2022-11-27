@@ -14,9 +14,7 @@ And this goes far beyond prenatal care! As much as the great performance is thro
 
 This system is a set of components: the Pregnant Notebook GUI web part, a cloud-based FHIR server, where the results of diagnostic medicine exams performed by the patient are made available.
 
-The web-based GUI interface to obtain the information of the results of the exams performed by the patient is developed with the Angular framework and the ng-zorro Ant Design
-
-https://ng.ant.design/docs/introduce/en
+The web-based GUI interface to obtain the information of the results of the exams performed by the patient is developed with the Angular framework and the ng-zorro Ant Design (https://ng.ant.design/docs/introduce/en)
 
 ![Image](https://raw.githubusercontent.com/Davi-Massaru/fhir-healthy-pregnancy/master/img/DiagramApp.jpeg)
 
