@@ -16,5 +16,4 @@ export class DiagnosticReportService {
     return this.http.get(`${environment.fhirserver}/DiagnosticReport/?patient=${patientId}&_sort=date`);
   }
 
-
 }

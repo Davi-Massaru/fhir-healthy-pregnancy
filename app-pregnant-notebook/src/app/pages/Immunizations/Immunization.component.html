@@ -1,0 +1,21 @@
+
+ <nz-divider nzPlain nzText="Immunization" nzOrientation="left"></nz-divider>
+
+ <nz-table #basicTable [nzData]="immunization" [nzPageSize]="50" [nzScroll]="{ y: '240px' }">
+   <thead>
+     <tr>
+       <th>Date</th>
+       <th>Vaccine</th>
+       <th>Status</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr *ngFor="let data of basicTable.data">
+       <td>{{ data.occurrenceDateTime }}</td>
+       <td>{{ data.vaccineCode?.text }}</td>
+       <td>{{ data.status }}</td>
+     </tr>
+   </tbody>
+ </nz-table>
+
+ <a nz-button nzType="link" (click)="copyImmunization()"><span nz-icon nzType="copy fhir data" nzTheme="outline"></span>copy fhir data</a>

@@ -1,0 +1,21 @@
+
+ <nz-divider nzPlain nzText="Ultrasounds" nzOrientation="left"></nz-divider>
+
+ <nz-table #basicTable [nzData]="procedures" [nzPageSize]="50" [nzScroll]="{ y: '240px' }">
+   <thead>
+     <tr>
+      <th>Date</th>
+      <th>Status</th>
+      <th>Description</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr *ngFor="let data of basicTable.data">
+        <th>{{data.performedPeriod?.start}}</th>
+        <th>{{data.status}}</th>
+        <th>{{data.code?.text}}</th>
+     </tr>
+   </tbody>
+ </nz-table>
+
+ <a nz-button nzType="link" (click)="copyObservation()"><span nz-icon nzType="copy fhir data" nzTheme="outline"></span>copy fhir data</a>

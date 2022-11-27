@@ -2,6 +2,7 @@ import { IPatient } from 'fhir-typescript-models';
 import { PatientService } from '../../services/patient.service';
 import { Component, OnInit } from '@angular/core';
 import {Clipboard} from '@angular/cdk/clipboard';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-identification',
@@ -16,7 +17,7 @@ export class IdentificationComponent implements OnInit {
   constructor(private service: PatientService, private clipboard: Clipboard) {}
 
   ngOnInit(): void {
-    this.service.getPatientInformations("5804")
+    this.service.getPatientInformations(environment.patientKey)
     .subscribe((response) => {
       console.log(response);
       this.patient = response;

@@ -1,7 +1,50 @@
-<form nz-form [nzLayout]="'vertical'" aria-readonly="true" >
 
-    <label nz-radio-button>fhir json data</label>
-    <textarea rows="12" nz-input [value]="stringJson" disabled="true"> </textarea>
-    <a nz-button nzType="link" (click)="copyPatient()"><span nz-icon nzType="copy" nzTheme="outline"></span> Copy</a>
 
-</form>
+  <a nz-button nzType="link" (click)="copyPatient()"><span nz-icon nzType="copy fhir data" nzTheme="outline"></span>copy fhir data</a>
+  <nz-divider nzPlain nzText="Personal documents" nzOrientation="left"></nz-divider>
+  <div nz-row nzJustify="space-around">
+
+    <div zn-col nzSpan="12" *ngIf="patient.identifier">
+      <div *ngFor="let identifier of patient.identifier">
+        <p *ngIf="identifier.type"> {{identifier.type.text}}: {{identifier.value}}</p>
+      </div>
+    </div>
+
+    <div zn-col nzSpan="12" *ngIf="patient.telecom">
+      <div *ngFor="let telecom of patient.telecom">
+        <p> {{telecom.system}} - {{telecom.use}}: {{telecom.value}}</p>
+      </div>
+    </div>
+  </div>
+
+
+  <nz-divider nzPlain nzText="Infos" nzOrientation="left"></nz-divider>
+  <div nz-row nzJustify="space-around">
+
+    <div zn-col nzSpan="12">
+      <div *ngFor="let name of patient.name">
+        <p>{{name.use}} name : {{name.prefix}} {{name.given?.[0]}} {{name.family}}</p>
+      </div>
+      <p>birth date: {{patient.birthDate}}</p>
+      <p>marital status: {{patient.maritalStatus?.text}}</p>
+    </div>
+
+    <div zn-col nzSpan="12" *ngIf="patient.extension">
+      <div *ngFor="let extension of patient.extension">
+        <p *ngIf="extension.valueString">{{extension.valueString}}</p>
+      </div>
+      <div *ngFor="let communication of patient.communication">
+        <p *ngIf="communication.language?.text">Language: {{communication.language?.text}}</p>
+      </div>
+    </div>
+  </div>
+
+    <div zn-col nzSpan="24" *ngIf="patient.address">
+      <div *ngFor="let address of patient.address">
+        <p>city: {{address.city}}</p>
+        <p>state: {{address.state}}</p>
+        <p>postalCode: {{address.postalCode}}</p>
+        <p>country: {{address.country}}</p>
+      </div>
+    </div>
+

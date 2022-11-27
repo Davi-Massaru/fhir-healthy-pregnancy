@@ -1,15 +1,15 @@
-import { IObservation } from 'fhir-typescript-models';
+import { Clipboard } from '@angular/cdk/clipboard';
 import { ObservationService } from './../../services/observation.service';
+import { IObservation } from 'fhir-typescript-models';
 import { Component, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment';
-import { Clipboard } from '@angular/cdk/clipboard';
 
 @Component({
-  selector: 'app-medical-exams',
-  templateUrl: './medical-exams.component.html',
-  styleUrls: ['./medical-exams.component.less']
+  selector: 'app-vital-signs',
+  templateUrl: './vital-signs.component.html',
+  styleUrls: ['./vital-signs.component.css']
 })
-export class MedicalExamsComponent implements OnInit {
+export class VitalSignsComponent implements OnInit {
 
   observations!:IObservation[];
   stringJson!:string;
@@ -17,10 +17,9 @@ export class MedicalExamsComponent implements OnInit {
   constructor(private service: ObservationService, private clipboard: Clipboard) {}
 
   ngOnInit(): void {
-    this.service.getPatientObservationsCategory(environment.patientKey, 'laboratory')
+    this.service.getPatientObservationsCategory(environment.patientKey,'vital-signs')
     .subscribe((response) => {
       console.log(response);
-
       this.observations = response;
       this.stringJson = JSON.stringify(this.observations, undefined, 4);
     });

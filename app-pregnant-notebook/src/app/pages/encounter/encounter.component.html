@@ -1,0 +1,25 @@
+
+ <nz-divider nzPlain nzText="Encounter" nzOrientation="left"></nz-divider>
+
+ <nz-table #basicTable [nzData]="encounters" [nzPageSize]="50" [nzScroll]="{ y: '240px' }">
+   <thead>
+     <tr>
+       <th>Encounter</th>
+       <th>Date</th>
+       <th>Service Provider</th>
+       <th>status</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr *ngFor="let data of basicTable.data">
+       <td>
+        <p *ngFor="let typeEncounter of data.type">{{typeEncounter.text}}</p>
+       </td>
+       <td>{{data.period?.start}}</td>
+       <td>{{data.serviceProvider?.display}}</td>
+       <td>{{data.status}}</td>
+     </tr>
+   </tbody>
+ </nz-table>
+
+ <a nz-button nzType="link" (click)="copyEncounter()"><span nz-icon nzType="copy fhir data" nzTheme="outline"></span>copy fhir data</a>

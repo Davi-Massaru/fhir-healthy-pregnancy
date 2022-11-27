@@ -6892,6 +6892,18 @@
             "reference": "urn:uuid:a6e751e8-c821-42f7-b36e-ad11a9699b65",
             "display": "Normal pregnancy"
           }
+        ],
+"reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "72892002",
+                "display": "Normal pregnancy"
+              }
+            ],
+            "text": "Normal pregnancy"
+          }
         ]
       },
       "request": {
@@ -6929,6 +6941,18 @@
           {
             "reference": "urn:uuid:a6e751e8-c821-42f7-b36e-ad11a9699b65",
             "display": "Normal pregnancy"
+          }
+        ],
+"reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "72892002",
+                "display": "Normal pregnancy"
+              }
+            ],
+            "text": "Normal pregnancy"
           }
         ]
       },
@@ -7669,6 +7693,18 @@
             "reference": "urn:uuid:a6e751e8-c821-42f7-b36e-ad11a9699b65",
             "display": "Normal pregnancy"
           }
+        ],
+"reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "72892002",
+                "display": "Normal pregnancy"
+              }
+            ],
+            "text": "Normal pregnancy"
+          }
         ]
       },
       "request": {
@@ -7706,6 +7742,18 @@
           {
             "reference": "urn:uuid:a6e751e8-c821-42f7-b36e-ad11a9699b65",
             "display": "Normal pregnancy"
+          }
+        ],
+"reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "72892002",
+                "display": "Normal pregnancy"
+              }
+            ],
+            "text": "Normal pregnancy"
           }
         ]
       },
@@ -8366,6 +8414,18 @@
             "reference": "urn:uuid:a6e751e8-c821-42f7-b36e-ad11a9699b65",
             "display": "Normal pregnancy"
           }
+        ],
+"reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "72892002",
+                "display": "Normal pregnancy"
+              }
+            ],
+            "text": "Normal pregnancy"
+          }
         ]
       },
       "request": {
@@ -8404,6 +8464,18 @@
             "reference": "urn:uuid:a6e751e8-c821-42f7-b36e-ad11a9699b65",
             "display": "Normal pregnancy"
           }
+        ],
+"reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "72892002",
+                "display": "Normal pregnancy"
+              }
+            ],
+            "text": "Normal pregnancy"
+          }
         ]
       },
       "request": {
@@ -8441,6 +8513,18 @@
           {
             "reference": "urn:uuid:a6e751e8-c821-42f7-b36e-ad11a9699b65",
             "display": "Normal pregnancy"
+          }
+        ],
+"reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "72892002",
+                "display": "Normal pregnancy"
+              }
+            ],
+            "text": "Normal pregnancy"
           }
         ]
       },

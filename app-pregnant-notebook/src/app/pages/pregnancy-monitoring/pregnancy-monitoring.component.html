@@ -1,0 +1,21 @@
+
+ <nz-divider nzPlain nzText="Pregnancy Monitoring" nzOrientation="left"></nz-divider>
+
+ <nz-table #basicTable [nzData]="procedures" [nzPageSize]="50" [nzScroll]="{ y: '240px' }">
+   <thead>
+     <tr>
+       <th>Procedure</th>
+       <th>Date</th>
+       <th>status</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr *ngFor="let data of basicTable.data">
+       <td>{{data.code?.text}}</td>
+       <td>{{data.performedPeriod?.start}}</td>
+       <td>{{data.status}}</td>
+     </tr>
+   </tbody>
+ </nz-table>
+
+ <a nz-button nzType="link" (click)="copyObservation()"><span nz-icon nzType="copy fhir data" nzTheme="outline"></span>copy fhir data</a>

@@ -1,18 +1,15 @@
+import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzDividerModule } from 'ng-zorro-antd/divider';
+import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
 import { NzFormModule } from 'ng-zorro-antd/form';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzInputModule } from 'ng-zorro-antd/input';
+import { VitalSignsRoutesModule } from './vital-signs.routing';
 import { NgModule } from '@angular/core';
-import { NzTableModule } from 'ng-zorro-antd/table';
 import { CommonModule } from '@angular/common';
-import { MedicalExamsRoutingModule } from './medical-exams-routing.module';
-import { MedicalExamsComponent } from './medical-exams.component';
-import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
+import { VitalSignsComponent } from './vital-signs.component';
 
 @NgModule({
-  declarations: [
-    MedicalExamsComponent
-  ],
   imports: [
     NzTableModule,
     NzDividerModule,
@@ -21,7 +18,8 @@ import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
     NzInputModule,
     NzDatePickerModule,
     CommonModule,
-    MedicalExamsRoutingModule
-  ]
+    VitalSignsRoutesModule
+  ],
+  declarations: [VitalSignsComponent]
 })
-export class MedicalExamsModule { }
+export class VitalSignsModule { }
