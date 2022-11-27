@@ -16,8 +16,9 @@ export class ObservationService {
     return this.http.get(`${environment.fhirserver}/Observation/?patient=${patientId}&_sort=date`);
   }
 
-  getPatientObservationsWithCode(patientId: string, code:string ) : Observable<IObservation> {
-    return this.http.get(`${environment.fhirserver}/Observation/?patient=${patientId}&code=${code}&_sort=date`);
+  getPatientObservationsWithCode(patientId: string, code:string ) : Observable<IObservation[]> {
+    return this.http.get(`${environment.fhirserver}/Observation/?patient=${patientId}&code=${code}&_sort=date`)
+      .pipe(map( (a: any) => a.entry?.map((entry: any) => entry.resource)));
   }
 
   getPatientObservationsCategory(patientId: string, category:string) : Observable<IObservation[]> {

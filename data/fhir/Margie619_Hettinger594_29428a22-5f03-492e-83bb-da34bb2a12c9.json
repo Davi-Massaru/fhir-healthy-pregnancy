@@ -150,6 +150,16 @@
             "system": "phone",
             "value": "555-246-7860",
             "use": "home"
+          },
+          {
+            "system": "email",
+            "value": "Ethelyn789.Thompson596@example.com",
+            "use": "home"
+          },
+          {
+            "system": "email",
+            "value": "Derek111.Huel628@example.com",
+            "use": "home"
           }
         ],
         "gender": "female",
@@ -11287,21 +11297,22 @@
             "coding": [
               {
                 "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "vital-signs",
-                "display": "vital-signs"
+                "code": "survey",
+                "display": "Survey"
               }
-            ]
+            ],
+            "text": "AOE"
           }
         ],
         "code": {
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "29463-7",
-              "display": "Body Weight"
+              "code": "8665-2",
+              "display": "Date last menstrual period"
             }
           ],
-          "text": "Body Weight"
+          "text": "Date last menstrual period"
         },
         "subject": {
           "reference": "urn:uuid:29428a22-5f03-492e-83bb-da34bb2a12c9"
@@ -11309,14 +11320,8 @@
         "encounter": {
           "reference": "urn:uuid:6d3acbc6-f33f-4569-bb2d-a4d0f5cd55c6"
         },
-        "effectiveDateTime": "2011-05-08T17:38:52+00:00",
-        "issued": "2011-05-08T17:38:52.478+00:00",
-        "valueQuantity": {
-          "value": 54.7,
-          "unit": "kg",
-          "system": "http://unitsofmeasure.org",
-          "code": "kg"
-        }
+        "effectiveDateTime": "2016-06-26T17:38:52+00:00",
+        "issued": "2016-06-26T17:38:52+00:00"
       },
       "request": {
         "method": "POST",
