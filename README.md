@@ -53,9 +53,9 @@ Even if you present the complete vaccination card, you need to take a few more e
 [Video application](https://youtu.be/JIZRhx1nRHE)
 
 
-
 ## Prerequisites
-Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.
+* Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.
+* This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.9.
 
 ## Installation 
 
@@ -71,7 +71,9 @@ Open the terminal in this directory and run:
 $ docker-compose up -d
 ```
 
-## FrontEnd Start
+## Frontend
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.9.
 
 Access directory
 ```
@@ -84,6 +86,8 @@ $ npm i
 ```
 
 Start
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 ```
 $ ng serve --port 0 --open
 ```
